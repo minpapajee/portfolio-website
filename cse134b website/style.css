@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: nameFont;
+    src: url(name.ttf);
+}
+
+@font-face  {
+    font-family: titleFont;
+    src: url(title.ttf);
+}
+
+:root {
+    --title-font: titleFont, Helvetica, sans-serif; 
+}
+
+
+
+body {
+    font-family: 'Poppins', Helvetica, sans-serif;
+    /*
+    background-image: url("gray.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;*/
+    font-size: 1.5vw;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: lightblue;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-family: var(--title-font);
+    font-size: 2vw;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+}
+
+ul {
+    list-style: none;
+}
+
+h2, h3, h4 {
+    font-family: var(--title-font);
+    margin-bottom: 1%;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a, nav a:visited {
+    color: black;
+}
+
+nav a:hover, nav a:active {
+    color: white;
+  }
+
+main {
+    background-color: white; 
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 5%;
+}
+
+main p {
+    margin-bottom: 4%; 
+}
+
+footer {
+    background-color:white;
+    padding: 3%;
+    text-align: center;
+}
+
+.linkbutton, .linkbutton:visited {
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    border: 1px solid white;
+    padding: 1% 2%;
+    text-align: center;
+    display: inline-block;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.enlargen {
+    transition: .2s ease-in-out;
+}
+
+.enlargen:hover {
+    transform: scale(1.7);
+}
+
+.socials, .socials:visited {
+    margin-left: 20%;
+    margin-right:20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width:1000px) {
+    .hobbies {
+        display: flex;
+    }
+}
+@media (max-width:999px) {
+    .hobbies picture {
+        display:block; 
+        margin-left:auto;
+        margin-right:auto;
+        width:50%;
+    }
+}
+
+
+
+
+    

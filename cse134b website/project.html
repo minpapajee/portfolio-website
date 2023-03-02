@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="desktop">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="viewport" content="width-device-width, inital-scale=1.0" />
+    <title>Aiden Jee | Projects</title>
+    <link rel="icon" href="favicon_io/favicon.ico" />
+    <link rel="stylesheet" media ="screen" href="style.css" type="text/css" />
+    <!-- Font Awesome 5.15.1 CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' />
+
+    <style>
+        a[href = "project.html"], a[href = "project.html"]:visited {
+            color:white;
+        }
+
+        .project {
+            display: flex;
+            align-items: center;    
+            justify-content: space-between;
+        }
+
+        [id^=project-] {
+            width: 40%;
+            height: 60%;
+            border-style: solid;
+            border-color: lightblue;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Logo Image -->
+        <a href="index.html" title="Back to homepage">
+        <img src="aiden1.svg" alt="Aiden Jee Logo"></a>
+    
+        <!-- Nav Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Search Bar -->
+        
+        <!-- <form class="searchbar" action="http://httpbin.org/get" method="get">
+            <label for="query">Search</label>
+            <input type="search" id="query" name="query" autofocus>
+            <noscript>
+                <input type="submit" value="Search">
+            </noscript>
+        </form>    -->
+    </header>
+    
+    <main>
+        <h2>Projects</h2>
+        <div class="project">
+           <div id="project-1">
+            <h3>CSE100 - Encoder / Decoder</h3>
+            <p>
+                A project I worked on in my third-year of college. By using a Huffman Tree,
+                the project showcases a function encoder and decoder based on ASCII values.
+            </p>
+           </div> 
+           <div id="project-2">
+            <h3>CSE-110 - Plangenix</h3>
+            <p>
+                Group project done in a time frame of a school quarter. I worked with 8 other students to
+                create a website that can be used to plan and keep track of events. My primary role was
+                a back end developer.
+            </p>
+           </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/aiden.jee" class="icon facebook">
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="https://twitter.com/aiden_jee" class="icon twitter">
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="https://www.github.com/minpapajee" class="icon github">
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="https://www.linkedin.com/in/aidenjee" class="icon linkedin">
+              <span><i class="fab fa-linkedin"></i></span>
+            </a>
+          </div>
+    </footer>
+</body>
+</html>

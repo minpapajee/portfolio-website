@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="desktop">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="viewport" content="width-device-width, inital-scale=1.0" />
+    <title>Aiden Jee | About</title>
+    <link rel="icon" href="favicon_io/favicon.ico" />
+    <link rel="stylesheet" media ="screen" href="style.css" type="text/css" />
+    <!-- Font Awesome 5.15.1 CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' />
+    <style>
+        a[href = "about.html"], a[href = "about.html"]:visited {
+            color:white;
+        }
+
+        #appear {
+            animation-name: textappear;
+            animation-duration: 3.5s;
+            overflow: hidden;
+            animation-direction: forward;
+            animation-timing-function: linear;
+        }
+
+        @keyframes textappear {
+            0% {
+                width: 0%;
+              
+            }
+
+            33% {
+                width: 33%;
+            
+            }
+
+            66% {
+                width: 66%;
+           
+            }
+
+            100% {
+                width: 100%;
+           
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <!-- Logo Image -->
+        <a href="index.html" title="Back to homepage">
+        <img src="aiden1.svg" alt="Aiden Jee Logo"></a>
+    
+        <!-- Nav Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Search Bar -->
+        
+        <!-- <form class="searchbar" action="http://httpbin.org/get" method="get">
+            <label for="query">Search</label>
+            <input type="search" id="query" name="query" autofocus>
+            <noscript>
+                <input type="submit" value="Search">
+            </noscript>
+        </form>    -->
+    </header>
+
+
+
+
+<main>
+    <h2 id="appear" style="text-align:center; font-size:6vw; white-space:nowrap;"><code>Hello, World!</code></h2>
+    <figure>
+        <picture>
+        <source media="(max-width:700px)" srcset="aiden1_phone.jpeg">
+        <source media="(max-width:1000px)" srcset="aiden1_tablet.jpeg">
+        <img class="center" src = "aiden1.jpg" alt="Picture of Me">
+        </picture>
+        <figcaption style="margin-bottom: 2%; text-align:center;">I'm Aiden, nice to meet you!</figcaption>
+    </figure>
+    <hr>
+
+        <h3>Introduction</h3>
+        <p>
+            <i>Annyeonghaseyo!</i> I was born in Korea, but raised in Los Angeles Country. I'm a proud Korean American
+            studying <span class="interests">Computer Science</span> at the University of California, San Diego. 
+            I'm still figuring out where my degree will take me, but so far I've found interests in 
+            <span class="interests">Front-End development</span> and <span class="interests">Machine Learning</span>.
+        </p>
+
+        <hr>
+
+        <h3>Favorite classes</h3>
+        <p>
+            For any UCSD alumnis and students, these were some of my favorite classes in no specific order. 
+            Even if you're not affiliated with the school, you might find some of these interesting!
+        </p>
+        <details style="margin-bottom: 3%;">
+            <summary>List of Classes</summary>
+        <ul>
+            <li>CSE 8A. Introduction to Programming and Computational Problem-Solving</li>
+            <li>CSE 21. Mathematics for Algorithms and Systems</li>
+            <li>CSE 100. Advanced Data Structures</li>
+            <li>CSE 110. Software Engineering</li>
+            <li>CHEM 6B. General Chemistry II</li>
+            <li>MATH 20C. Calculus and Analytic Geometry for Science and Engineering</li>
+            <li>MATH 173A. Optimization Methods for Data Science I </li>
+        </ul>
+    </details>
+
+    <hr> 
+
+       <h3>Hobbies</h3>
+       <div class="hobbies">
+        <p>
+            I enjoy various activities such as gaming, listening to <span class="interests">korean hiphop</span>, 
+            <span class="interests">cooking</span>, and <span class="interests">lifting. I've made many friends
+            with similar hobbies, and I hope to meet more in my future workplace. 
+        </p>
+
+        <picture>
+            <source class="enlargen" media="(max-width:700px)" srcset="friend_phone.png">
+            <source class="enlargen" media="(max-width:1000px)" srcset="friend_tablet.png">
+            <img class="enlargen" src="friend.png" alt="collage of my friends and hobbies">
+        </picture> 
+        </div>
+
+        <hr>
+
+        <h3>My favorite song</h3>
+        <p>
+            When I'm driving, coding, or working out, I'm usually listening to music. A song in particular I like 
+            listening to is Titanium by Skinny Brown. Although it is in Korean, it's just a great song that I wanted
+            to share. 
+        </p>
+        <audio controls>
+            <source src="titanium.mp3" type="audio/mp3">
+            <source src="titanium.ogg" type="audio/ogg">
+        </audio>
+
+        <hr>
+</main>
+
+<footer>
+    <div class="socials">
+        <a href="https://www.facebook.com/aiden.jee" class="icon facebook">
+          <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="https://twitter.com/aiden_jee" class="icon twitter">
+          <span><i class="fab fa-twitter"></i></span>
+        </a>
+        <a href="https://www.github.com/minpapajee" class="icon github">
+          <span><i class="fab fa-github"></i></span>
+        </a>
+        <a href="https://www.linkedin.com/in/aidenjee" class="icon linkedin">
+          <span><i class="fab fa-linkedin"></i></span>
+        </a>
+      </div>
+</footer>
+</body>
+</html>

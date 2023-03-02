@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="desktop">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="viewport" content="width-device-width, inital-scale=1.0" />
+    <title>Aiden Jee | Lab</title>
+    <link rel="icon" href="favicon_io/favicon.ico" />
+    <style>
+        h1 {color:darkblue}
+        p {color:lightskyblue}
+    </style>
+</head>
+
+<body>
+        <header>
+                <!-- Logo Image -->
+                <a href="index.html" title="Back to homepage">
+                <img src="logo.png" alt="Aiden Jee Logo"></a>
+            
+                <!-- Nav Bar -->
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            
+                <!-- Search Bar -->
+                <form action="http://httpbin.org/get" method="get">
+                    <label for="query">Search</label>
+                    <input type="search" id="query" name="query" autofocus>
+                    <noscript>
+                        <input type="submit" value="Search">
+                    </noscript>
+                </form>
+            </header>
+    <h1><b>Aiden Jee</b></h1>
+    <p>I'm a learning <strong>Software Developer</strong>.</p>
+
+
+
+
+<main>
+    <h2>Lab</h2>
+    <h3>Survey</h3>
+    <label for="browsers">What browser are you viewing the site?</label>
+    <select name="browsers" id="browsers">
+        <optgroup label="desktop">
+            <option value="chrome">Chrome</option>
+            <option value="edge">Edge</option>
+            <option value="safari">Safari</option>
+            <option value="firefox">Firefox</option>
+        </optgroup>
+        <optgroup label="mobile">
+            <option value="chromemobile">Chrome Mobile</option>
+            <option value="safarimobile">Safari Mobile</option>
+            <option value="samsung">Samsung Internet</option>
+            <option value="opera">Opera</option>
+        </optgroup>
+    </select>
+    <label for="issues">Report an issue with the site:</label>
+    <input list="issues" name="issues" id="issues">
+    <datalist id="issues">
+        <option value="Images won't load">
+        <option value="Slow loading">
+        <option value="Buggy interface">
+        <option value="Other: ">
+    </datalist>
+
+
+    <h4>Test</h4>
+    <template>
+        <h5>Hello World!</h5>
+        <picture>
+            <source media="(min-width:400px)" srcset="logo.png">
+            <source media="(min-width:200px)" srcset="logo.png">
+            <img src="logo.png" alt="logo" style="width:auto;">
+        </picture>
+    </template>
+    <canvas id="aidenCanvas" width="200" height="200"></canvas>
+
+    <script>
+        var canvas = document.getElementById("aidenCanvas");
+        var context = c.getContext("2d");
+        context.font = "20px Arial";
+        context.fillText("Aiden Jee", 20, 100);
+    </script>
+</main>
+
+<footer>
+    <a href="contact.html">Contact</a>
+</footer>
+</body>
+</html>
