@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="desktop">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="viewport" content="width-device-width, inital-scale=1.0" />
+    <title>Custom Dialogs</title>
+    <script type="module" src="\DOMPurify-main\src\purify.js"></script>
+    <script type="module">
+        import * as Dialogs from "./customdialogs.js";
+        document.addEventListener('DOMContentLoaded', Dialogs.buttons());
+    </script>
+</head>
+
+<body>
+    <main>
+        <button type="button" id="alert">Alert</button>
+        <button type="button" id="confirm">Confirm</button>
+        <button type="button" id="prompt">Prompt</button>
+        <dialog id="alertDialog">
+            <p>Alert Pressed!</p>
+            <button id="alertOk">Ok</button>
+        </dialog>
+        <dialog id="confirmDialog">
+            <p>Do you confirm this?</p>
+            <button id="confirmOk">Ok</button>
+            <button id="confirmCancel">Cancel</button>
+        </dialog>
+        <dialog id="promptDialog">
+            <p>What is your name?</p>
+            <input type="text" id="name" name="name">
+            <button id="promptOk">Ok</button>
+            <button id="promptCancel">Cancel</button>
+        </dialog>
+
+        <hr>
+        <output id='output'></output>   
+
+    </main>
+</body>
+
+</html>
