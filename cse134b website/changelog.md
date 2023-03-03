@@ -7,3 +7,4 @@ the overall form all getting changes.
 
 4. Changed socials styling.
 
+5. Created a datastream and added script tags for Google Analytics.
