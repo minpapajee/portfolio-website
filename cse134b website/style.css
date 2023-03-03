@@ -64,6 +64,15 @@ ul {
     list-style: none;
 }
 
+h2 {
+    font-size: 4vw;
+}
+
+h3 {
+    font-size: 3vw;
+}
+
+
 h2, h3, h4 {
     font-family: var(--title-font);
     margin-bottom: 1%;
@@ -129,9 +138,12 @@ footer {
 .socials, .socials:visited {
     margin-left: 20%;
     margin-right:20%;
+    margin-top: 1%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 2em;
+ 
 }
 
 @media (min-width:1000px) {

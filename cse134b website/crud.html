@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="desktop">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Personal Portfolio" />
+        <meta name="viewport" content="width-device-width, inital-scale=1.0" />
+        <title>Aiden Jee | Blog Posts</title>
+        <link rel="icon" href="favicon_io/favicon.ico" />
+        <script src="blog.js" type="module"></script>
+        <script src="updatedelete.js" type="module"></script>
+        <script src="popup.js" type="module"></script>
+    </head>
+
+
+<body>
+    <main>
+        <h1>Blog Posts</h1>
+        <ul id="posts">
+        </ul>
+        <button id="add-button" type="button">Add Post</button>
+        <dialog id="popup">
+        <form id="add-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title">
+            <br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <br>
+            <label for="summary">Summary:</label>
+            <br>
+            <textarea id="summary" name="summary" cols="20" rows="10"></textarea>
+            <br>
+            <button type="button" id="cancel">Cancel</button>
+            <button type="button" id="save">Save</button>
+        </form>
+        </dialog>
+    </main>
+</body>
+</html>
